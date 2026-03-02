@@ -26,8 +26,13 @@ void printArray(int arr[], int n) {
 }
 
 int main() {
-    int arr[] = {64, 25, 12, 22, 11};
-    int n = 5;
+    int n;
+    printf("Enter the no of elements: ");
+    scanf("%d",&n);
+    int arr[n];
+    printf("Enter the elements\n");
+    for(int i=0;i<n;i++)
+        scanf("%d",a[i]);
     selectionSort(arr, n);
 
     printf("Sorted array: \n");
