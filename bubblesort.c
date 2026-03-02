@@ -12,8 +12,13 @@ void bubblesort(int arr[], int n)
   }
 }
 int main()
-int arr[]={5,1,4,2,8};
-int n=5;
+int n;
+printf("Enter number of elements: \n");
+scanf("%d",&n);
+int arr[n];
+printf("Enter the elements:\n");
+for(i=0;i<n;i++)
+  scanf("%d",&arr[i]);
 bubblesort(arr,n);
 printf("Sorted Elements are:\n");
 for(int i=0;i<n;i++){
@@ -21,4 +26,3 @@ for(int i=0;i<n;i++){
 
 return 0;
 }
-//v1.0: basic bubble sort implementation
